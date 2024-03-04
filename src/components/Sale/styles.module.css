@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sales_block {
+    display: block;
+    margin: 80px 0;
+    padding-left: 10%;
+}
+
+.sales_products{
+    display:flex;
+}
+
+.sales_h3{
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.line {
+    max-width: 1200px;
+    width: 100%;
+    width: 825px;
+    height: 0px;
+    border: 1px #dddddd7c solid;
+    margin: 40px 0 18px 32px;
+
+}
+
+.b_sales{
+    width: 142px;
+    height: 36px;
+    margin: 22px 0 12px 0;
+    border-radius: 6px;
+    border: 1px rgb(221, 221, 221) solid;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sales_list{
+    display: flex;
+    margin: 80px 40px 80px 0;
+    text-align: center;
+    width: 1360px;
+    height: 532px;
+}
+
+.items{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.products_images{
+    position: relative;
+}
+
+
+.product_img{
+    max-width: 316px;
+    height: 284px;
+    width: 100%;
+    border: 1px solid #DDD;
+}
+.discount{
+    font-size: large;
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #22992f;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px; 
+}
+
+
+.product_title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 32px 0 0;
+    color:rgb(40,40,40);
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 252px;
+    height:44px;
+    gap: 16px;
+}
+
+
+.product_price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 25px;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+.discounted_price{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8b8b8b;
+    text-decoration: line-through;
+}
+
+.product_discount{
+   color: black;
+}

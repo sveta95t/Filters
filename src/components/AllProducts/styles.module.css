@@ -1,0 +1,26 @@
+
+.all_products{
+    padding: 40px;
+}
+
+.mainTable_allproducts{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.all_products .line{
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    border: 1px solid #DDDDDD;
+    width: 16px;
+    background-color: #DDD;
+    margin: 18px 0;
+}
+
+.text{
+    color: rgb(40, 40, 40);
+    font-family: Montserrat;
+    font-size: 24px;
+    margin: 20px 10px;
+}
