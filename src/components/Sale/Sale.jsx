@@ -12,10 +12,6 @@ function Sale({product}) {
   const [products, setProducts] = useState ([]);
   const [discount, setDiscount] = useState([5]);
 
-  const calculateDiscount =() =>{
-    setDiscount = ((product.price - product.discont_price) / product.price) * 100
-    setDiscount(calculateDiscount);
-    }
   
   useEffect(() => {
     async function fetchData(){

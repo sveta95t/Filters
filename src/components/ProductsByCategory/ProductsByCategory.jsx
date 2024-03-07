@@ -3,20 +3,26 @@ import { useState, useEffect } from 'react';
 import Filter from '../../components/Filter/Filter';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { data_url } from './url';
 import CategoryItem from '../CategoryItem/CategoryItem';
+import { Dispatch } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
 function ProductsByCategory() {
-    const {id} = useParams();
-    const [ProductsByCategory, setProductsbyCategory] = useState([]);
-
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.products.products);
+    const error = useSelector((state) => state.error);
+    
     useEffect(() => {
-      const items = axios.get(`http://localhost:3333/categories/${id}`);
+      const items = axios.get(`http://localhost:3333/categories/${id}`) .then;
         setProductsbyCategory(items);
-    },[]);
+    },[id]);
 
+    //async await
+    
+
+    console.log(productsByCategory);
 
     return (
       <div> 
@@ -50,7 +56,7 @@ function ProductsByCategory() {
       <p className={styles.tools_equipment}> Tools and equipment </p>
       <Filter/>
       <div>
-        {ProductsByCategory.map((product) => (
+        {productsByCategory.map((product) => (
         <CategoryItem product ={product}/>
        ) )}
       </div>
